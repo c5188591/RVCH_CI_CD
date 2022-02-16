@@ -120,4 +120,4 @@ Service key parameters for creation of communication arrangement SAP_COM_0582
 
 ## Feedback
 Please create a [GitHub issue](https://github.com/SAP-samples/abap-platform-ci-cd-samples/issues) in this repository if you have suggestions on how to improve this example.
-## test comment
+## test comment appended
