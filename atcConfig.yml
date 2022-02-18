@@ -1,5 +1,5 @@
 checkvariant: ABAP_CLOUD_DEVELOPMENT_DEFAULT
 atcobjects:
   softwarecomponent:
-    - name: "/VPCOE/MY_APP"
+    - name: "/VPCOE/RVCH"
  
