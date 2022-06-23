@@ -41,7 +41,7 @@ stages:
     #Parameter 'cfSpace': Cloud Foundry Space used to create installation test system
     cfSpace: 'vendorportal'
     #Parameter 'cfServiceInstance': Service Instance Name of installation test system
-    cfServiceInstance: 'RVCH_AddonIT'
+    cfServiceInstance: 'RVCH_AddonIT1'
     #Parameter 'abapSystemAdminEmail': E-Mail address for the initial administrator of the installation test system
     abapSystemAdminEmail: 'DL_61A8D2A903AAFD026FA657CE@global.corp.sap'
     #Parameter 'abapSystemID': Three character name of the installation test system - maps to 'sapSystemName'
