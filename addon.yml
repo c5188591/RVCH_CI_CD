@@ -2,14 +2,14 @@
 #Parameter 'addonProduct': Technical name of the add-on product
 addonProduct: /VPCOE/PR_RVCH
 #Parameter 'addonVersion': Technical version of the add-on product <product version>.<support package stack level>. <patch level>
-addonVersion: 1.0.9
+addonVersion: 1.0.10
 #Parameter 'repositories': contains one or multiple software component versions
 repositories:
     #Parameter 'name': Technical name of the software component
   - name: /VPCOE/RVCH
     #Parameter 'branch': This is the maintenance branch from the git repository
-    branch: V1.0.9
+    branch: V1.0.10
     #Parameter 'version': This is the technical software component version
-    version: 1.0.9
+    version: 1.0.10
     #Parameter 'commitID': commit id specified for a repository
-    commitID: 56994dce
+    commitID: ee6f132f
