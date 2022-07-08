@@ -12,7 +12,7 @@ general:
   #Parameter 'cfCredentialsId': Credentials stored in Jenkins for Space Developer user to authenticate to the Cloud Foundry API
   cfCredentialsId: 'cfAuthentification'
   #Parameter 'cfServiceInstance': Service Instance Name of assembly system
-  cfServiceInstance: 'RVCH_AddonAssemble'
+  cfServiceInstance: 'BLD'
 stages:
   #Stage 'Prepare System': In this stage, the SAP BTP, ABAP environment system for add-on assembly is created.
   Prepare System:
@@ -26,7 +26,7 @@ stages:
     repositories: 'addon.yml'
     #Parameter 'strategy': influences, which steps will be executed to import the repositories
     #strategy: 'Clone' is recommended if a new system is created in the Prepare System stage.
-    strategy: 'Clone'
+    strategy: 'CheckoutPull'
   #Stage 'ATC': In this stage, ATC checks can be executed using abapEnvironmentRunATCCheck.
   ATC:
     #Parameter 'atcConfig': Path to a YAML configuration file for Packages and/or Software Components to be checked during ATC run
@@ -37,11 +37,11 @@ stages:
   #Stage 'Integration Tests': creates an SAP BTP, ABAP environment (Steampunk) system and installs the add-on product, that was built in the Build stage
   Integration Tests:
     #Parameter 'cfOrg': Cloud Foundry Organization used to create installation test system
-    cfOrg: 'Value Prototyping_rvch-pocs'
+    cfOrg: 'VPHub_vendorportal-addonit-tikcqjez'
     #Parameter 'cfSpace': Cloud Foundry Space used to create installation test system
-    cfSpace: 'rvch_poc_test'
+    cfSpace: 'vendorportal'
     #Parameter 'cfServiceInstance': Service Instance Name of installation test system
-    cfServiceInstance: 'PR_RVCH_POC_TEST_INST'
+    cfServiceInstance: 'RVCH_AddonIT'
     #Parameter 'abapSystemAdminEmail': E-Mail address for the initial administrator of the installation test system
     abapSystemAdminEmail: 'DL_61A8D2A903AAFD026FA657CE@global.corp.sap'
     #Parameter 'abapSystemID': Three character name of the installation test system - maps to 'sapSystemName'
