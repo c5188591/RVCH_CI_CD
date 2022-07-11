@@ -8,7 +8,7 @@ repositories:
     #Parameter 'name': Technical name of the software component
   - name: /VPCOE/RVCH
     #Parameter 'branch': This is the maintenance branch from the git repository
-    branch: V1.1.11
+    branch: V1.0.11
     #Parameter 'version': This is the technical software component version
     version: 1.1.0
     #Parameter 'commitID': commit id specified for a repository
