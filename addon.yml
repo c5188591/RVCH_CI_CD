@@ -12,4 +12,4 @@ repositories:
     #Parameter 'version': This is the technical software component version
     version: 1.2.1
     #Parameter 'commitID': commit id specified for a repository
-    commitID: "05751166"
+    commitID: "74e778a6"
